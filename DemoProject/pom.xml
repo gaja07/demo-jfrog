@@ -4,16 +4,30 @@
   <groupId>com.frog</groupId>
   <artifactId>DemoProject</artifactId>
   <packaging>jar</packaging>
-  <version>7.5-SNAPSHOT</version>
+  <version>7.6-SNAPSHOT</version>
   <name>DemoProject</name>
   <url>http://maven.apache.org</url>
-
-    <scm>
-        <url>https://github.com/Sankardunga/demo-jfrog</url>
-        <connection>scm:git:https://github.com/Sankardunga/demo-jfrog</connection>
-        <developerConnection>scm:git:https://github.com/Sankardunga/demo-jfrog</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
+  <profiles>
+  	<profile>
+		  <id>LOCAL</id>
+			<properties>
+				<CMES.version>2019</CMES.version>
+			 </properties>
+	  </profile>
+	  <profile>
+		  <id>DEVELOPMENT</id>
+			<properties>
+				<CMES.version>2020</CMES.version>
+			 </properties>
+	  </profile>
+  </profiles>
+  
+  <scm>
+      <url>https://github.com/Sankardunga/demo-jfrog</url>
+      <connection>scm:git:https://github.com/Sankardunga/demo-jfrog</connection>
+      <developerConnection>scm:git:https://github.com/Sankardunga/demo-jfrog</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
   
   <dependencies>
     <dependency>
