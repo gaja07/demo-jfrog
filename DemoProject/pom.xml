@@ -4,7 +4,7 @@
   <groupId>demo.com.frog</groupId>
   <artifactId>DemoProject</artifactId>
   <packaging>jar</packaging>
-  <version>8.0-SNAPSHOT</version>
+  <version>8.1-SNAPSHOT</version>
   <name>DemoProject</name>
   <url>http://maven.apache.org</url>
   <profiles>
